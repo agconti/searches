@@ -10,7 +10,8 @@ def binary_search(items, target):
 
         if target < items[middle]:
             high = middle
-        else:
+            
+        if target >= items[middle]:
             low = middle
 
     if items[low] == target:
