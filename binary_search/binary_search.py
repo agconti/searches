@@ -5,7 +5,7 @@ def binary_search(items, target):
     low = 0
     high = len(items)
 
-    while (low + 1 < high):
+    while (high - low) > 1:
         middle = (low + high) // 2
 
         if target < items[middle]:
